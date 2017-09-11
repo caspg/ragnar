@@ -13,7 +13,6 @@ defmodule RagnarCore.Client.WeWorkRemotelyRequest do
   )
 
   def get do
-    :debugger
     HTTPoison.get(@programming_jobs_rss_url)
   end
 end
