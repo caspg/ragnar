@@ -1,18 +1,7 @@
 defmodule RagnarCore do
-  @moduledoc """
-  Documentation for RagnarCore.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> RagnarCore.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def find_programming_jobs do
+    %{
+      we_work_remotely: RagnarCore.WeWorkRemotely.find_programming_jobs(),
+    }
   end
 end

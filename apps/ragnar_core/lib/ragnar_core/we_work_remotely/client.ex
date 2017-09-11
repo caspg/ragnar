@@ -14,6 +14,3 @@ defmodule RagnarCore.WeWorkRemotely.Client do
     HTTPoison.get(@programming_jobs_rss_url)
   end
 end
-
-defmodule RagnarCore.WeWorkRemotely.ClientRequest do
-end
