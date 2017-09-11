@@ -1,4 +1,4 @@
-defmodule RagnarCore.Parser.WeWorkRemotely do
+defmodule RagnarCore.WeWorkRemotely.Parser do
   def parse_rss_feed(rss_feed) do
     rss_feed
     |> Floki.find("item")

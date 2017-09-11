@@ -1,4 +1,4 @@
-defmodule RagnarCoreTest.Parser.WeWorkRemotelyTest do
+defmodule RagnarCoreTest.WeWorkRemotely.ParserTest do
   use ExUnit.Case
 
   import PathHelpers
@@ -14,7 +14,7 @@ defmodule RagnarCoreTest.Parser.WeWorkRemotelyTest do
 
   test "parsing rss_feed" do
     rss_feed = File.read!(fixture_path("weworkremotely_rss_feed.xml"))
-    parsed_jobs = RagnarCore.Parser.WeWorkRemotely.parse_rss_feed(rss_feed)
+    parsed_jobs = RagnarCore.WeWorkRemotely.Parser.parse_rss_feed(rss_feed)
 
     assert length(parsed_jobs) == 15
     assert List.first(parsed_jobs) == first_job_details()
