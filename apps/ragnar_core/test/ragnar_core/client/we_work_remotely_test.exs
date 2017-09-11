@@ -1,4 +1,4 @@
-Code.require_file("../support/mocks/we_work_remotely_mock.exs", __DIR__)
+Code.require_file("../../support/mocks/we_work_remotely_mock.exs", __DIR__)
 
 defmodule RagnarCoreTest.Client.WeWorkRemotelyTest do
   use ExUnit.Case
