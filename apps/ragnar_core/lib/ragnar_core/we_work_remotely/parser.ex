@@ -1,4 +1,6 @@
 defmodule RagnarCore.WeWorkRemotely.Parser do
+  @moduledoc false
+
   alias RagnarCore.JobDetails
 
   def parse_rss_feed(rss_feed) do

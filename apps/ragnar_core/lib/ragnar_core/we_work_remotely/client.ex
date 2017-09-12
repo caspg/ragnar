@@ -1,4 +1,8 @@
 defmodule RagnarCore.WeWorkRemotely.Client do
+  @moduledoc """
+  Function responsible for making requests to https://weworkremotely.com.
+  """
+
   @programming_jobs_rss_url(
     "https://weworkremotely.com/categories/2-programming/jobs.rss"
   )
