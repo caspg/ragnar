@@ -1,9 +1,16 @@
 defmodule RagnarCore.WeWorkRemotely do
+  @moduledoc """
+  Module responsible for fetching and parsing jobs
+  from https://weworkremotely.com.
+  """
+
   alias RagnarCore.Helper
+  alias RagnarCore.WeWorkRemotely.Client
+  alias RagnarCore.WeWorkRemotely.Parser
 
   def find_jobs(nil) do
-    rss_feed = RagnarCore.WeWorkRemotely.Client.fetch_jobs_rss()
-    RagnarCore.WeWorkRemotely.Parser.parse_rss_feed(rss_feed)
+    rss_feed = Client.fetch_jobs_rss()
+    Parser.parse_rss_feed(rss_feed)
   end
 
   def find_jobs(days_limit) do
