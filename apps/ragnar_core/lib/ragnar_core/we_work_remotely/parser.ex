@@ -19,7 +19,8 @@ defmodule RagnarCore.WeWorkRemotely.Parser do
       client: JobDetails.we_work_remotely_client_name(),
       title: find_nodes_text(floki_item_tree, "title"),
       origin_url: find_nodes_text(floki_item_tree, "link"),
-      publication_date: parse_publication_date(floki_item_tree, "pubdate")
+      description: find_nodes_text(floki_item_tree, "description"),
+      publication_date: parse_publication_date(floki_item_tree, "pubdate"),
     }
   end
 
