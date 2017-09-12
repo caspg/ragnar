@@ -11,7 +11,7 @@ defmodule RagnarCoreTest.WeWorkRemotely.ClientTest do
     mocked_response = WeWorkRemotelyMock.get_programming_jobs(mocked_response_body)
 
     with_mock HTTPoison, [get: fn(_url) -> mocked_response end] do
-      response = RagnarCore.WeWorkRemotely.Client.fetch_programming_jobs_rss()
+      response = RagnarCore.WeWorkRemotely.Client.fetch_jobs_rss()
 
       assert called HTTPoison.get(expected_url_called)
       assert response === mocked_response_body

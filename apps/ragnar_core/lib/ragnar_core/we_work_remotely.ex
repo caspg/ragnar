@@ -1,13 +1,13 @@
 defmodule RagnarCore.WeWorkRemotely do
   alias RagnarCore.Helper
 
-  def find_programming_jobs(nil) do
-    rss_feed = RagnarCore.WeWorkRemotely.Client.fetch_programming_jobs_rss()
+  def find_jobs(nil) do
+    rss_feed = RagnarCore.WeWorkRemotely.Client.fetch_jobs_rss()
     RagnarCore.WeWorkRemotely.Parser.parse_rss_feed(rss_feed)
   end
 
-  def find_programming_jobs(days_limit) do
-    find_programming_jobs(nil)
+  def find_jobs(days_limit) do
+    find_jobs(nil)
     |> Enum.filter(&job_is_not_old?(&1, days_limit))
   end
 
