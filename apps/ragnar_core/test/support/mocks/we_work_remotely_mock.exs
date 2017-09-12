@@ -4,7 +4,7 @@ end
 
 defmodule WeWorkRemotelyMock do
   def get_programming_jobs(response_body) do
-    { :ok, successful_response(response_body) }
+    {:ok, successful_response(response_body)}
   end
 
   defp successful_response(response_body) do
