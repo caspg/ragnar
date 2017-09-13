@@ -20,11 +20,11 @@ defmodule RagnarCore.WeWorkRemotely.Parser do
       title: find_nodes_text(floki_item_tree, "title"),
       origin_url: find_nodes_text(floki_item_tree, "link"),
       description: find_nodes_text(floki_item_tree, "description"),
-      publication_date: parse_publication_date(floki_item_tree, "pubdate"),
+      publication_date: parse_publication_date(floki_item_tree),
     }
   end
 
-  defp parse_publication_date(floki_item_tree, node_name)  do
+  defp parse_publication_date(floki_item_tree)  do
     find_nodes_text(floki_item_tree, "pubdate")
     |> Timex.parse!("{RFC1123}")
   end

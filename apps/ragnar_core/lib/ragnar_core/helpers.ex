@@ -15,7 +15,7 @@ end
 defmodule RagnarCore.TimexHelper do
   @moduledoc """
   This module allows to mock Timex.today during tests
-  without mocking whole Timex module.
+  without mocking the whole Timex module.
   """
 
   def today do
