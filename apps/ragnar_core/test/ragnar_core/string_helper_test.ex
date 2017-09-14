@@ -6,26 +6,25 @@ defmodule RagnarCore.StringHelperTest do
   import RagnarCore.StringHelper
 
   test "string_contains_any_term?" do
-    assert string_contains_any_term?(test_string(), ["Rails"], [])
-    assert string_contains_any_term?(test_string(), ["Orange", "ReacT", "Banana"], [])
+    assert string_contains_any_term?(test_string(), ["Engineer"])
+    assert string_contains_any_term?(test_string(), ["engineer"])
+    assert string_contains_any_term?(test_string(), ["Orange", "Engineer", "Banana"])
 
-    refute string_contains_any_term?(test_string(), ["Rails"], ["ixlib=rails"])
-    refute string_contains_any_term?(test_string(), ["Orange", "Banana"], [])
+    refute string_contains_any_term?(test_string(), ["Orange", "Banana"])
   end
 
   test "string_contains_all_terms?" do
-    assert string_contains_all_terms?(test_string(), ["RailS"], [])
-    assert string_contains_all_terms?(test_string(), ["Elixir"], [])
-    assert string_contains_all_terms?(test_string(), ["react", "elixir"], [])
-    assert string_contains_all_terms?(test_string(), ["Elixir", "rails", "“GPS for learning"], [])
+    assert string_contains_all_terms?(test_string(), ["Engineer"])
+    assert string_contains_all_terms?(test_string(), ["Engineer", "Parse.ly"])
+    assert string_contains_all_terms?(test_string(), ["New York", "Engineer", "best-looking dashboards"])
 
-    refute string_contains_all_terms?(test_string(), ["Rails"], ["ixlib=rails"])
-    refute string_contains_all_terms?(test_string(), ["Elixir", "Banana"], [])
-    refute string_contains_all_terms?(test_string(), ["grumpy dog", "react", "Banana"], [])
+    refute string_contains_all_terms?(test_string(), ["Engineer", "Banana"])
+    refute string_contains_all_terms?(test_string(), ["grumpy dog", "Engineer", "Banana"])
   end
 
   defp test_string do
-    # This is a part of job's description which comes from weworkremotely.com rss feed.
-    "<img src=\"https://we-work-remotely-production.imgix.net/logos/0001/6656/logo.gif?ixlib=rails-2.1.3&w=190&min-h=150\" alt=\"Logo.gif?ixlib=rails 2.1\" />\n<p>\n  <strong>Headquarters:</strong> Remote\n  Elixir keyword for lol  <br /><strong>URL:</strong> <a href=\"https://www.chartlytics.com/\">https://www.chartlytics.com/</a>\n</p>\n\n<div><span></span></div><div><span><b>Front end react developer </b></span></div><div><br></div><div><span>Hiring: FrontEnd Javascript Developer with React experience</span></div><div><br></div><div><span>Hi! I'm Dave Stevens, Co-founder &amp; CEO of Chartlytics. We're looking for a very passionate front-end  javascript developer to help us build the most powerful behavior measurement platform for accelerating learning outcomes across all of human learning the world has ever seen! Phew...  </span></div><div><br></div><div><span><b>Accelerating learning outcomes</b></span></div><div><br></div><div><span>We are focused on helping those with special needs realize their potential by providing their care givers with a “GPS for learning”. With my business partner, Dr. Rick Kubina (Professor of Special Education at Penn State) we are transforming how teachers, analysts, coaches, and trainers understand the effects of their instruction on individuals so they can make more timely decisionsto produce accelerated outcomes."
+    # This is a part of job's description which comes
+    # from weworkremotely.com rss feed.
+    "\n\n\n  Headquarters: New York, NY\n    URL: http://parse.ly\n\n\nWhat's Parse.ly?We've built a real-time content measurement layer for the entire web.Our analytics platform helps digital storytellers at some of the web's best sites, such as Arstechnica, The New Yorker, TechCrunch, The Intercept, Mashable, and many more. In total, our analytics system needs to handle over 100 billion monthly events from over 1 billion monthly unique visitors.Our entire stack is in Python and JavaScript, and our team has innovated in areas related to real-time analytics, building some of the best open source tools for working with modern stream processing technologies. Our UX/design team has also built one of the best-looking dashboards on the planet, using AngularJS and d3.js. You can see some screenshots: http://parse.ly/tour\nOur distributed team is best-in-class and we happily skip commutes by working out of our ergonomic home offices. Here's a photograph of mine running two full-screen Parse.ly dashboards on my monitors: https://flic.kr/p/v1NZ73\nTo see an example of how we work, check out the blog post, Whatever It Takes: http://blog.parsely.com/post/46\n\nWhat's a Customer Success Engineer?\nCode + Communication = Customer Success.\n"
   end
 end
