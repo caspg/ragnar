@@ -19,18 +19,26 @@ defmodule RagnarCore.WeWorkRemotely.Parser do
       client: JobDetails.we_work_remotely_client_name(),
       title: find_nodes_text(floki_item_tree, "title"),
       origin_url: find_nodes_text(floki_item_tree, "link"),
-      description: find_nodes_text(floki_item_tree, "description"),
+      description: parse_description(floki_item_tree),
       publication_date: parse_publication_date(floki_item_tree),
     }
   end
 
+  defp parse_description(floki_item_tree) do
+    floki_item_tree
+    |> find_nodes_text("description")
+    |> String.replace(~r/<[^>]*>/, "")
+  end
+
   defp parse_publication_date(floki_item_tree)  do
-    find_nodes_text(floki_item_tree, "pubdate")
+    floki_item_tree
+    |> find_nodes_text("pubdate")
     |> Timex.parse!("{RFC1123}")
   end
 
   defp find_nodes_text(floki_tree, node_name) do
-    Floki.find(floki_tree, node_name)
+    floki_tree
+    |> Floki.find(node_name)
     |> Floki.text
   end
 end
