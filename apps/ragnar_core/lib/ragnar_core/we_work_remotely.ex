@@ -27,12 +27,9 @@ defmodule RagnarCore.WeWorkRemotely do
     contain_all? = Keyword.get(options, :contain_all?, false)
     days_limit   = Keyword.get(options, :days_limit, nil)
 
-    fetch_and_parse_jobs()
+    Client.fetch_jobs_rss()
+    |> Parser.parse_rss_feed()
     |> JobsFilter.maybe_filter_jobs_by_date(days_limit)
-    |> JobsSearch.search_terms(terms, [contain_all?: contain_all?])
-  end
-
-  defp fetch_and_parse_jobs do
-    Client.fetch_jobs_rss() |> Parser.parse_rss_feed()
+    |> JobsSearch.search_terms(terms, contain_all?)
   end
 end

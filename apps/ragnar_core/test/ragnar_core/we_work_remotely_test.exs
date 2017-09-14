@@ -1,4 +1,5 @@
 Code.require_file("../support/mocks/we_work_remotely_mock.exs", __DIR__)
+Code.require_file("../support/factories/job_details_factory.exs", __DIR__)
 
 defmodule RagnarCoreTest.Client.WeWorkRemotelyTest do
   @moduledoc false
@@ -9,6 +10,7 @@ defmodule RagnarCoreTest.Client.WeWorkRemotelyTest do
   import PathHelpers
 
   alias RagnarCore.WeWorkRemotely
+  alias RagnarCore.TimexHelper
 
   defmacro with_request_mock(block) do
     quote do
@@ -25,43 +27,47 @@ defmodule RagnarCoreTest.Client.WeWorkRemotelyTest do
     "https://weworkremotely.com/categories/2-programming/jobs.rss"
   end
 
-  def first_job_date do
-    Timex.parse!("Thu, 07 Sep 2017 22:11:40 +0000", "{RFC1123}")
-  end
-
-  def expected_first_job_details do
-    %RagnarCore.JobDetails{
-      client: "we_work_remotely",
-      origin_url: "https://weworkremotely.com/jobs/5335-customer-success-engineer",
-      publication_date: first_job_date(),
-      title: "Parse.ly: Customer Success Engineer"
-    }
-  end
-
   def assert_commons(result) do
     assert called HTTPoison.get(expected_url_called())
     assert is_list(result)
-    assert List.first(result) == expected_first_job_details()
+    assert List.first(result) ==
+      JobDetailsFactory.weworkremotely_roaster_tools()
   end
 
-  test "find_jobs/1 when days_limit param is nil" do
+  test "find_jobs/1" do
     with_request_mock do
-      result = WeWorkRemotely.find_jobs(nil)
+      terms = ["React", "Rails"]
+      result = WeWorkRemotely.find_jobs(terms)
 
+      assert length(result) == 7
       assert_commons(result)
-      assert length(result) == 15
     end
   end
 
-  test "find_jobs/1 when days_limit param is 2" do
-    with_request_mock do
-      # We need to mock Timex.today to match dates from jobs fixture.
-      with_mock RagnarCore.TimexHelper, [today: fn() -> first_job_date() end] do
-        days_limit = 1
-        result = WeWorkRemotely.find_jobs(days_limit)
+  describe "find_jobs/2" do
+    test "when `contain_all?` is set to true" do
+      with_request_mock do
+        terms = ["React", "Rails"]
+        result = WeWorkRemotely.find_jobs(terms, contain_all?: true)
 
+        assert length(result) == 5
         assert_commons(result)
-        assert length(result) == 7
+      end
+    end
+
+    test "when `day_limit` option is set to 4" do
+      mocked_time = Timex.parse!("Thu, 07 Sep 2017 22:11:40 +0000", "{RFC1123}")
+
+      with_request_mock do
+        # We need to mock Timex.today to match dates from jobs fixture.
+        with_mock TimexHelper, [today: fn() -> mocked_time end] do
+          terms = ["React", "Rails"]
+          options = [contain_all?: true, days_limit: 1]
+          result = WeWorkRemotely.find_jobs(terms, options)
+
+          assert length(result) == 2
+          assert_commons(result)
+        end
       end
     end
   end

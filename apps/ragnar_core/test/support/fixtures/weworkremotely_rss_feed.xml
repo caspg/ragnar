@@ -22,54 +22,6 @@
 &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;
 &lt;b&gt;&lt;a class="anchor" href="https://gist.github.com/amontalenti/752d958e0755fedc6235#whats-a-success-engineer"&gt;&lt;/a&gt;What's a Customer Success Engineer?&lt;/b&gt;
 &lt;/h3&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Code + Communication = Customer Success.&lt;br&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The goal of a Customer Success Engineer: ensure our customers are delighted with our products, through the wise application of technical know-how, engineering magic, and strong communication skills.&lt;br&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You need to love to help people, to write, to solve problems, and to build things. You need to be technical enough to gain deep experience in analytics -- not just our tools, but the tools available in the marketplace, too. You need to stay close to our customers and understand how they use our dashboard, APIs, and infrastructure, as well as how it fits into their broader analytics goals.&lt;br&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You have to love the idea of explaining tough technical concepts to a non-technical crowd. You want to use your people skills to work closely with top media companies to solve huge problems for them, but also sharpen your technical skills by staying embedded in the product team.&lt;br&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;As this is a customer-facing role, you’ll also need to be comfortable jumping onto email threads, chat conversations, and even phone/video discussions with customers to help them diagnose issues. Sometimes, the people you’re talking to will be the web developers responsible for integrating Parse.ly into their sites and apps -- but sometimes, it will be non-technical staff who work with those people.&lt;br&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;As for you, to match well to this role, you’re likely on the junior side of your programming career, so you may not be ready yet for doing day-to-day development on a complex product on your own. But you are willing to learn -- and you're ready to solve specific challenges for customers by building and shipping real code that they will use.&lt;br&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;h3&gt;&lt;br&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;
-&lt;b&gt;&lt;a class="anchor" href="https://gist.github.com/amontalenti/752d958e0755fedc6235#a-day-in-the-life-of-a-success-engineer"&gt;&lt;/a&gt;A day in the life of a Customer Success Engineer&lt;/b&gt;
-&lt;/h3&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;In interacting with customers, you’re likely to help customers integrate open source content management systems (such as Wordpress, Drupal); SQL data warehouses (such as Redshift, BigQuery); video player plug-ins (such as JWPlayer, VideoJS); and iOS/Android mobile SDKs. Toward this end, you will become an expert in Parse.ly APIs for JavaScript, HTTP/JSON, data warehousing, and mobile toward this purpose. You'll also pick up Python programming by working with our team -- which is staffed with Python experts.&lt;br&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Finally, you'd be joining a team of talented engineers that love open source and tough data challenges, while also joining a team of talented analysts who like solving problems for customers every day.&lt;br&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You care deeply about our users and partners, and you will judge yourself on how well you serve them.&lt;br&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;
-&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;&lt;b&gt;Responsibilities:&lt;/b&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Develop deep expertise in the code base and functionality of the Parse.ly platform, including &lt;a href="http://parse.ly/tour"&gt;our Dashboard product&lt;/a&gt;, JavaScript libraries, mobile integrations, browser plug-ins, rich &lt;a href="http://parse.ly/help/api/endpoint"&gt;HTTP/JSON API&lt;/a&gt;, or emerging products like our &lt;a href="http://parse.ly/data-pipeline"&gt;Data Pipeline&lt;/a&gt; and our advanced &lt;a href="http://parse.ly/video-analytics"&gt;Video Analytics&lt;/a&gt;.&lt;br&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;Help users debug and diagnose integration challenges, and respond to their issues directly via web, email, and via phone/video discussion.&lt;br&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;Lead our "bug day" process, where we triage customer issues and ensure the product team is well-informed in how to reproduce and fix those issues at the core.&lt;br&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;Help Parse.ly with in-house Business Intelligence; we "dog food" our own products, and we use our own data to inform further developments (yes, this is very meta!) -- in this part of the role, you can use skills in data analysis and SQL to help with user engagement analysis, churn prediction, and automated customer onboarding.&lt;br&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;Help to automate our QA process by building test scripts using Python- and JavaScript-based tools.&lt;br&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;Take our tooling to the next level by extending in-house chatbots, administrative dashboards, and reusable scripts.&lt;br&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;Work closely with the product team and success team to improve usage across our entire platform.&lt;br&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;People with past experience working remotely will be prioritized.&lt;br&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;To apply:&lt;/strong&gt; Apply now by sending your CV and/or LinkedIn profile, Github link (or similar, if available), and 1-3 paragraph intro to &lt;a encode="hex" href="mailto:work@parsely.com"&gt;work@parsely.com&lt;/a&gt;. Let us know what part of the position interests you, or point us toward an interesting project or piece of code you wrote. Also: mention the "Success Engineer" role and WeWorkRemotely.&lt;/p&gt;
 </description>
       <pubDate>Thu, 07 Sep 2017 22:11:40 +0000</pubDate>
       <guid>https://weworkremotely.com/jobs/5335-customer-success-engineer</guid>
@@ -86,32 +38,10 @@
 &lt;/p&gt;
 
 &lt;div&gt;
-&lt;b&gt;&lt;i&gt;Love coffee?&lt;/i&gt;&lt;/b&gt;  Love the idea of solving everyday problems for the coffee roasters who roast, package and deliver your coffee?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We do too.  We are coffee veterans with a strong vision for how to serve the rapidly-growing coffee community with software.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You’ll join our team of four, and contribute immediately.  You’ll have a clear roadmap with strong dev and QC processes already in place, enabling you to build and deploy features your first week.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You’ll join a team that thrives on moving fast and simply gets shit done.&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;Our Stack and Dev Process&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Our stack is Rails 4, Ruby 2.X, Heroku, Postgres, S3, Sidekiq + Redis, plus a dash of React.  It’s an intentionally vanilla stack, since we’re solving complex, real problems and technology is just a means to an end.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We use continuous integration via CircleCI, check code quality via CodeClimate and rely heavily on Heroku’s pipeline feature to QA features before deploying to staging and finally production.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We aim to be a high velocity team that’s laser focused on serving the roasting community, and we’ll continue to iterate on our processes to make that happen.  If you have ideas that’ll help us achieve that vision, bring ‘em!&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;About Us&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;RoasterTools launched in 2016 to automate the sales and production processes for wholesale coffees roasters – enabling them to sell, roast and deliver coffee more efficiently than ever.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We manage wholesale orders via our own wholesale portal, connect into ecommerce platforms like Shopify, plan daily production schedules, and facilitate shipping and delivery.  Roasters run on RoasterTools.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;At its launch weekend, RoasterTools was awarded a best new product award at the SCAA Expo – the industry’s showcase international event – by a panel of peer judges.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;RoasterTools is led by a coffee roaster – Jon Ewalt – who’s roasted, cupped and sampled thousands of batches over the past decade.  He also developed and tested the initial concepts behind RoasterTools at his roastery, which he sold in 2015 to focus on building RoasterTools.  &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We know what it means to be a fast-growing specialty coffee roaster, and use those insights every day.&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;Company Culture&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;As veterans of the specialty coffee industry, our core values are rooted in hospitality, quality, and speed of service.  We share our customers’ love for a perfectly brewed cup of coffee and a busy work day.  &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The coffee industry is focused on constant improvement, sustainability, and inclusion.  Our customers know about getting their hands dirty and solving tough problems, whether it’s atop a mountain in Peru or fixing a vintage roaster.  &lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;Requirements&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;b&gt;&lt;i&gt;Love coffee?&lt;/i&gt;&lt;/b&gt;  Love the idea of solving everyday problems for the coffee roasters who roast, package and deliver your coffee?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We do too.  We are coffee veterans with a strong vision for how to serve the rapidly-growing coffee community with software.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You’ll join our team of four, and contribute immediately.  You’ll have a clear roadmap with strong dev and QC processes already in place, enabling you to build and deploy features your first week.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You’ll join a team that thrives on moving fast and simply gets shit done.&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;Our Stack and Dev Process&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Our stack is Rails 4, Ruby 2.X, Heroku, Postgres, S3, Sidekiq + Redis, plus a dash of React.  It’s an intentionally vanilla stack, since we’re solving complex, real problems and technology is just a means to an end.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We use continuous integration via CircleCI, check code quality via CodeClimate and rely heavily on Heroku’s pipeline feature to QA features before deploying to staging and finally production.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We aim to be a high velocity team that’s laser focused on serving the roasting community, and we’ll continue to iterate on our processes to make that happen.
 &lt;li&gt;&lt;b&gt;&lt;b&gt;Full time position&lt;/b&gt;&lt;/b&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;b&gt;Remote or local to Portland, Oregon&lt;/b&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;b&gt;Rails developer with 3 years+ professional experience&lt;/b&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;b&gt;Professional experience with React and Redux is a major plus&lt;/b&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Our customers are scrappy, ingenuitive and fast paced; and so are we.  &lt;/b&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;b&gt;You know how to communicate effectively and work as part of a team trying to build something great&lt;/b&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;b&gt;You make things happen, and thrive as the pace accelerates&lt;/b&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;b&gt;You love coffee&lt;/b&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;b&gt;Not a jerk&lt;/b&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;p&gt;&lt;strong&gt;To apply:&lt;/strong&gt; &lt;a href="https://roastertools.typeform.com/to/vxm1T5"&gt;https://roastertools.typeform.com/to/vxm1T5&lt;/a&gt;&lt;/p&gt;
 </description>
       <pubDate>Thu, 07 Sep 2017 21:39:00 +0000</pubDate>
@@ -625,7 +555,6 @@ Please submit resume and cover letter to &lt;a encode="hex" href="mailto:emiquel
       <media:content url="https://wwr-prod.s3.amazonaws.com/logos/0001/6656/logo.gif" type="image/png"/>
       <title>Chartlytics: Junior Front End React.js Developer</title>
       <description>&lt;img src="https://we-work-remotely-production.imgix.net/logos/0001/6656/logo.gif?ixlib=rails-2.1.3&amp;w=190&amp;min-h=150" alt="Logo.gif?ixlib=rails 2.1" /&gt;
-
 &lt;p&gt;
   &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote
     &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href="https://www.chartlytics.com/"&gt;https://www.chartlytics.com/&lt;/a&gt;
@@ -750,6 +679,8 @@ Please submit resume and cover letter to &lt;a encode="hex" href="mailto:emiquel
 &lt;/div&gt;&lt;div&gt;
 &lt;span&gt;Please DO NOT contact us about this job. All hires at Chartlytics are made by our own team.&lt;/span&gt;
 &lt;/div&gt;
+
+Adding Rails keyword for testing, yo!
 
 &lt;p&gt;&lt;strong&gt;To apply:&lt;/strong&gt; To apply: Please fill out and submit the Google Form below. Include samples of recent code along with your Github and LinkedIn profiles.
 &lt;a href="https://goo.gl/forms/Ww5xqrByNxzgMHs92"&gt;https://goo.gl/forms/Ww5xqrByNxzgMHs92&lt;/a&gt;
