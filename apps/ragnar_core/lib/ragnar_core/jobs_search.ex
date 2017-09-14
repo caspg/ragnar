@@ -23,12 +23,16 @@ defmodule RagnarCore.JobsSearch do
   end
 
   defp job_contains_terms?(job_details, terms, false) do
-    StringHelper.string_contains_any_term?(job_details.title, terms) ||
-      StringHelper.string_contains_any_term?(job_details.description, terms)
+    %JobDetails{title: title, description: description} = job_details
+
+    StringHelper.string_contains_any_term?(title, terms, []) ||
+      StringHelper.string_contains_any_term?(description, terms, [])
   end
 
   defp job_contains_terms?(job_details, terms, true) do
-    StringHelper.string_contains_all_terms?(job_details.title, terms) ||
-      StringHelper.string_contains_all_terms?(job_details.description, terms)
+    %JobDetails{title: title, description: description} = job_details
+
+    StringHelper.string_contains_all_terms?(title, terms, []) ||
+      StringHelper.string_contains_all_terms?(description, terms, [])
   end
 end
